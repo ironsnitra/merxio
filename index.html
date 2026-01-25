@@ -31,8 +31,20 @@
                 <li><a href="#usage" class="nav-link">Business</a></li>
                 <li><a href="privacy.html" class="nav-link">Privacy</a></li>
             </ul>
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
     </nav>
+
+    <div class="mobile-menu">
+        <a href="#features" class="mobile-link">Features</a>
+        <a href="#usage" class="mobile-link">Business</a>
+        <a href="privacy.html" class="mobile-link">Privacy Policy</a>
+        <a href="#" class="btn btn-primary" style="margin-top: 2rem;">Download Now</a>
+    </div>
 
     <header class="hero">
         <div class="container hero-container">
@@ -84,27 +96,28 @@
             <h2 class="section-title">Everything You Need to <span class="gradient-text">Scale.</span></h2>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">🔍</div>
-                    <h3>Smart Terminal</h3>
-                    <p>Instant barcode scanning for lightning-fast checkouts. Use your phone's camera to process sales
-                        in seconds.</p>
+                    <div class="feature-icon">�</div>
+                    <h3>Professional Receipts</h3>
+                    <p>Generate styled PDF receipts with your business logo. Support for Bluetooth ESC/POS thermal
+                        printers & instant QR verification.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">📦</div>
-                    <h3>Inventory Control</h3>
-                    <p>Manage stock levels, cost prices, and barcodes. Get low-stock alerts before you run out.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>Live Dashboard</h3>
-                    <p>Real-time insights into net profit, income, and expenses. Visualize your growth with bento-style
-                        cards.</p>
+                    <div class="feature-icon">🏷️</div>
+                    <h3>Variant Management</h3>
+                    <p>Support for product variants (colors, sizes) with unique barcodes, pricing, and individual stock
+                        tracking.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">�</div>
-                    <h3>Secure Wallet</h3>
-                    <p>Track every penny. Dedicated cash flow management for both business income and operational
-                        expenses.</p>
+                    <h3>Customer CRM</h3>
+                    <p>Advanced customer profiles with 'Pay Later' debt tracking, balanced history, and personalized
+                        transaction logs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Bento Analytics</h3>
+                    <p>Real-time insights into net profit and cash flow. Professional dashboard designed for
+                        high-performance business tracking.</p>
                 </div>
             </div>
         </div>
@@ -124,15 +137,19 @@
                 </div>
                 <div class="screenshot-item">
                     <img src="images/screenshots/screen3.png" alt="Inventory Screen">
-                    <p>Stock Management</p>
+                    <p>Stock & Variants</p>
                 </div>
                 <div class="screenshot-item">
                     <img src="images/screenshots/screen4.png" alt="Wallet Screen">
                     <p>Cash Flow Tracker</p>
                 </div>
                 <div class="screenshot-item">
-                    <img src="images/screenshots/screen6.png" alt="Barcode Scanner">
-                    <p>Smart Scanning</p>
+                    <img src="images/screenshots/screen5.png" alt="Customers Screen">
+                    <p>Debt Management</p>
+                </div>
+                <div class="screenshot-item">
+                    <img src="images/screenshots/screen6.png" alt="Receipt Screen">
+                    <p>Professional Receipts</p>
                 </div>
             </div>
         </div>
@@ -188,13 +205,13 @@
                         <span class="usage-icon">🏪</span>
                         <div class="usage-tag">Inventory Pro</div>
                     </div>
-                    <h4>Small Retail & Boutiques</h4>
-                    <p>Perfect for managing clothing stores, electronics, or clinics. Ditch the dusty PC and manage your
-                        entire stock while walking the floor.</p>
+                    <h4>Small Retail &amp; Boutiques</h4>
+                    <p>Manage diverse catalogs with complex product variants. Track styles, colors, and sizes with
+                        individual barcodes and fixed pricing for precise stock control.</p>
                     <ul class="usage-list">
-                        <li>Barcode Scanning</li>
+                        <li>Variant Barcodes</li>
                         <li>Low Stock Alerts</li>
-                        <li>Bulk CSV Export</li>
+                        <li>Debt Management</li>
                     </ul>
                 </div>
 
@@ -205,13 +222,13 @@
                         <div class="usage-tag" style="background: rgba(244, 114, 182, 0.1); color: #f472b6;">Speed King
                         </div>
                     </div>
-                    <h4>Coffee Shops & Food Stalls</h4>
-                    <p>In a rush? Merxio’s terminal is built for speed. Process orders in two taps and share digital
-                        receipts via WhatsApp or Email instantly.</p>
+                    <h4>Coffee Shops &amp; Food Stalls</h4>
+                    <p>The speed you need for peak hours. Connect Bluetooth thermal printers for instant receipts or
+                        share digital copies with integrated QR code verification.</p>
                     <ul class="usage-list">
-                        <li>Digital Receipts</li>
-                        <li>Fast Cart Additions</li>
-                        <li>Custom Discounts</li>
+                        <li>Bluetooth Printing</li>
+                        <li>PDF Easy Share</li>
+                        <li>QR Receipts</li>
                     </ul>
                 </div>
 
@@ -237,14 +254,31 @@
 
     <footer class="footer">
         <div class="container footer-container">
-            <div class="footer-info">
-                <h3>Merxio</h3>
-                <p>Revolutionizing mobile commerce.</p>
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="images/icon.png" alt="Merxio Logo" class="logo-img">
+                    <h3>Merxio Pocket POS</h3>
+                    <p>Professional Offline Point of Sale for modern entrepreneurs.</p>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-col">
+                        <h4>Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#usage">Business Types</a>
+                        <a href="#screenshots">Inside the App</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Support</h4>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="#">Help Center</a>
+                        <a href="#">Export Data</a>
+                    </div>
+                </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Merxio POS. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="privacy.html">Privacy Policy</a>
+                <div class="footer-socials">
+                    <span>FAST • SECURE • PRIVATE</span>
                 </div>
             </div>
         </div>
